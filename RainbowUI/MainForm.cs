@@ -12,6 +12,7 @@ namespace RainbowUI
 {
     public partial class MainForm : Form
     {
+        //Variable for dragging
         Point lastPoint;
         public MainForm()
         {
