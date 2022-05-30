@@ -50,7 +50,7 @@ namespace RainbowUI
             //Idk put stuff in here if you want
         }
 
-        //<<<<<< Rainbow timer >>>>>>>
+        //Rainbow timer
         int r = 255, g = 0, b = 0;
         private void PanelRainbow_Tick(object sender, EventArgs e)
         {
@@ -72,6 +72,5 @@ namespace RainbowUI
                 r++;
             }
         }
-        //<<<<<< Rainbow timer >>>>>>>
     }
 }
