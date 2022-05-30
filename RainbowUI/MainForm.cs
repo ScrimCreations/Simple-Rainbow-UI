@@ -55,7 +55,7 @@ namespace RainbowUI
         private void PanelRainbow_Tick(object sender, EventArgs e)
         {
             RainbowPanel.BackColor = Color.FromArgb(r, g, b);
-
+            LogoLabel.BackColor = Color.FromArgb(r, g, b);
             if (r > 0 && b == 0) 
             {
                 r--;

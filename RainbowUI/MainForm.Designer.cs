@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.RainbowPanel = new System.Windows.Forms.Panel();
             this.DragPanel = new System.Windows.Forms.Panel();
-            this.LogoLabel = new System.Windows.Forms.Label();
-            this.CloseLabel = new System.Windows.Forms.Label();
             this.minimizelabel = new System.Windows.Forms.Label();
+            this.CloseLabel = new System.Windows.Forms.Label();
+            this.LogoLabel = new System.Windows.Forms.Label();
+            this.RainbowPanel = new System.Windows.Forms.Panel();
             this.PanelRainbow = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.DragPanel.SuspendLayout();
@@ -50,14 +50,6 @@
             this.panel1.Size = new System.Drawing.Size(806, 41);
             this.panel1.TabIndex = 0;
             // 
-            // RainbowPanel
-            // 
-            this.RainbowPanel.BackColor = System.Drawing.Color.Red;
-            this.RainbowPanel.Location = new System.Drawing.Point(3, 15);
-            this.RainbowPanel.Name = "RainbowPanel";
-            this.RainbowPanel.Size = new System.Drawing.Size(806, 34);
-            this.RainbowPanel.TabIndex = 1;
-            // 
             // DragPanel
             // 
             this.DragPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
@@ -70,6 +62,32 @@
             this.DragPanel.TabIndex = 2;
             this.DragPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DragPanel_MouseDown);
             this.DragPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.DragPanel_MouseMove);
+            // 
+            // minimizelabel
+            // 
+            this.minimizelabel.AutoSize = true;
+            this.minimizelabel.BackColor = System.Drawing.Color.Transparent;
+            this.minimizelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimizelabel.ForeColor = System.Drawing.Color.White;
+            this.minimizelabel.Location = new System.Drawing.Point(749, 9);
+            this.minimizelabel.Name = "minimizelabel";
+            this.minimizelabel.Size = new System.Drawing.Size(19, 25);
+            this.minimizelabel.TabIndex = 3;
+            this.minimizelabel.Text = "-";
+            this.minimizelabel.Click += new System.EventHandler(this.minimizelabel_Click);
+            // 
+            // CloseLabel
+            // 
+            this.CloseLabel.AutoSize = true;
+            this.CloseLabel.BackColor = System.Drawing.Color.Transparent;
+            this.CloseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseLabel.ForeColor = System.Drawing.Color.White;
+            this.CloseLabel.Location = new System.Drawing.Point(774, 9);
+            this.CloseLabel.Name = "CloseLabel";
+            this.CloseLabel.Size = new System.Drawing.Size(26, 25);
+            this.CloseLabel.TabIndex = 2;
+            this.CloseLabel.Text = "X";
+            this.CloseLabel.Click += new System.EventHandler(this.CloseLabel_Click);
             // 
             // LogoLabel
             // 
@@ -85,35 +103,18 @@
             this.LogoLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DragPanel_MouseDown);
             this.LogoLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.DragPanel_MouseMove);
             // 
-            // CloseLabel
+            // RainbowPanel
             // 
-            this.CloseLabel.AutoSize = true;
-            this.CloseLabel.BackColor = System.Drawing.Color.Transparent;
-            this.CloseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseLabel.ForeColor = System.Drawing.Color.White;
-            this.CloseLabel.Location = new System.Drawing.Point(774, 9);
-            this.CloseLabel.Name = "CloseLabel";
-            this.CloseLabel.Size = new System.Drawing.Size(26, 25);
-            this.CloseLabel.TabIndex = 2;
-            this.CloseLabel.Text = "X";
-            this.CloseLabel.Click += new System.EventHandler(this.CloseLabel_Click);
-            // 
-            // minimizelabel
-            // 
-            this.minimizelabel.AutoSize = true;
-            this.minimizelabel.BackColor = System.Drawing.Color.Transparent;
-            this.minimizelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimizelabel.ForeColor = System.Drawing.Color.White;
-            this.minimizelabel.Location = new System.Drawing.Point(749, 9);
-            this.minimizelabel.Name = "minimizelabel";
-            this.minimizelabel.Size = new System.Drawing.Size(19, 25);
-            this.minimizelabel.TabIndex = 3;
-            this.minimizelabel.Text = "-";
-            this.minimizelabel.Click += new System.EventHandler(this.minimizelabel_Click);
+            this.RainbowPanel.BackColor = System.Drawing.Color.Red;
+            this.RainbowPanel.Location = new System.Drawing.Point(3, 15);
+            this.RainbowPanel.Name = "RainbowPanel";
+            this.RainbowPanel.Size = new System.Drawing.Size(806, 34);
+            this.RainbowPanel.TabIndex = 1;
             // 
             // PanelRainbow
             // 
             this.PanelRainbow.Enabled = true;
+            this.PanelRainbow.Interval = 1;
             this.PanelRainbow.Tick += new System.EventHandler(this.PanelRainbow_Tick);
             // 
             // MainForm
